@@ -7,10 +7,10 @@ marked.setOptions({
 })
 
 const previewImages = [
-  'image/portfolio-bg-1280x720.png',
-  'image/portfolio-hero-1600x900.png',
-  'image/grad-linear_teal-1920x1080.png',
-  'image/grad-linear_cyan-1920x1080.png'
+  'portfolio-bg-1280x720.png',
+  'portfolio-hero-1600x900.png',
+  'grad-linear_teal-1920x1080.png',
+  'grad-linear_cyan-1920x1080.png'
 ]
 
 const container = document.getElementById('portfolio-list')

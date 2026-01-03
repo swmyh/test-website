@@ -50,58 +50,58 @@ body {
 }
 
 body.page-home {
-  --page-bg: url("../../image/home-bg-1920x1080.png");
+  --page-bg: url("home-bg-1920x1080.png");
 }
 
 body.page-blog {
-  --page-bg: url("../../image/blog-bg-1920x1080.png");
+  --page-bg: url("blog-bg-1920x1080.png");
 }
 
 body.page-portfolio {
-  --page-bg: url("../../image/portfolio-bg-1920x1080.png");
+  --page-bg: url("portfolio-bg-1920x1080.png");
 }
 
 body.page-about {
-  --page-bg: url("../../image/about-bg-1920x1080.png");
+  --page-bg: url("about-bg-1920x1080.png");
 }
 
 body.page-jikatar {
-  --page-bg: url("../../image/grad-radial_cyan-1920x1080.png");
+  --page-bg: url("grad-radial_cyan-1920x1080.png");
 }
 
 @media (max-width: 1200px) {
   body.page-home {
-    --page-bg: url("../../image/home-bg-1280x720.png");
+    --page-bg: url("home-bg-1280x720.png");
   }
 
   body.page-blog {
-    --page-bg: url("../../image/blog-bg-1280x720.png");
+    --page-bg: url("blog-bg-1280x720.png");
   }
 
   body.page-portfolio {
-    --page-bg: url("../../image/portfolio-bg-1280x720.png");
+    --page-bg: url("portfolio-bg-1280x720.png");
   }
 
   body.page-about {
-    --page-bg: url("../../image/about-bg-1280x720.png");
+    --page-bg: url("about-bg-1280x720.png");
   }
 }
 
 @media (max-width: 768px) {
   body.page-home {
-    --page-bg: url("../../image/home-bg-1080x1920.png");
+    --page-bg: url("home-bg-1080x1920.png");
   }
 
   body.page-blog {
-    --page-bg: url("../../image/blog-bg-1080x1920.png");
+    --page-bg: url("blog-bg-1080x1920.png");
   }
 
   body.page-portfolio {
-    --page-bg: url("../../image/portfolio-bg-1080x1920.png");
+    --page-bg: url("portfolio-bg-1080x1920.png");
   }
 
   body.page-about {
-    --page-bg: url("../../image/about-bg-1080x1920.png");
+    --page-bg: url("about-bg-1080x1920.png");
   }
 }
 
@@ -594,7 +594,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../../image/skills-bg-1920x1080.png");
+  background-image: url("skills-bg-1920x1080.png");
   background-size: cover;
   background-position: center;
   opacity: 0.6;
@@ -603,13 +603,13 @@ main {
 
 @media (max-width: 900px) {
   .section-panel--skills::before {
-    background-image: url("../../image/skills-bg-1280x720.png");
+    background-image: url("skills-bg-1280x720.png");
   }
 }
 
 @media (max-width: 640px) {
   .section-panel--skills::before {
-    background-image: url("../../image/skills-bg-1080x1920.png");
+    background-image: url("skills-bg-1080x1920.png");
   }
 }
 
@@ -648,7 +648,7 @@ main {
   border: none;
   background:
     linear-gradient(120deg, rgba(8, 47, 73, 0.9), rgba(14, 116, 144, 0.7)),
-    url("../../image/grad-linear_cyan-1920x1080.png");
+    url("grad-linear_cyan-1920x1080.png");
   background-size: cover;
   background-position: center;
 }
