@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - 上野悠月</title>
+    <meta name="description" content="経歴・スキル・タイムライン">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body class="page-about">
+    <a class="skip-link" href="#main">メインへスキップ</a>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="page-ambient" aria-hidden="true"></div>
+
+    <header id="header" class="site-header">
+        <nav class="site-nav container">
+            <a class="brand" href="index.html#hero">
+                <img src="image/logo-orbit-256.png" alt="" class="brand-mark" width="32" height="32">
+                <span>Yuzuki Ueno</span>
+            </a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="nav-links" aria-expanded="false">Menu</button>
+            <ul id="nav-links" class="nav-links" data-nav>
+                <li><a class="nav-link" href="index.html#hero">Home</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link is-active" href="about.html">About</a></li>
+                <li><a class="nav-link" href="jikatar.html">自語り</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="section hero spotlight" data-spotlight>
+            <div class="container hero-grid">
+                <div class="hero__content flow" data-reveal>
+                    <p class="eyebrow">Profile</p>
+                    <h1 class="hero__title">
+                        About Me
+                        <span class="title-accent">設計と思考の軌跡</span>
+                    </h1>
+                    <p class="hero__lead">
+                        情報の構造化、体験設計、実装の品質まで、プロダクトの本質を磨くことに集中しています。
+                        自分の価値観や学びを言語化しながら、より良い体験に向き合っています。
+                    </p>
+                    <div class="hero__cta">
+                        <a class="button button--primary" href="portfolio.html">View Portfolio</a>
+                        <a class="button button--ghost" href="blog.html">Read Blog</a>
+                    </div>
+                </div>
+                <div class="hero__media" data-reveal style="--delay: 0.1s;">
+                    <div class="hero__frame parallax" data-parallax data-speed="0.2">
+                        <img src="image/about-hero-1600x900.png" alt="回路と光が交差する抽象ビジュアル">
+                    </div>
+                    <div class="hero__badge parallax" data-parallax data-speed="0.35">
+                        <img src="image/logo-nodeGraph-512.png" alt="" aria-hidden="true">
+                        <span>Research Driven</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <p class="eyebrow">Values</p>
+                    <h2 class="section-title">設計で守りたいこと</h2>
+                    <p class="section-lead">目的と体験を丁寧に繋ぎ、使いやすさと美しさを共存させます。</p>
+                </div>
+                <div class="cards-grid">
+                    <article class="card" data-reveal>
+                        <div class="card-icon">
+                            <img src="image/logo-hexCircuit-512.png" alt="" aria-hidden="true">
+                        </div>
+                        <h3 class="card__title">Clarity First</h3>
+                        <p class="card__desc">情報の優先度を明確にし、迷いの少ない体験を作ります。</p>
+                    </article>
+                    <article class="card" data-reveal style="--delay: 0.08s;">
+                        <div class="card-icon">
+                            <img src="image/logo-orbit-512.png" alt="" aria-hidden="true">
+                        </div>
+                        <h3 class="card__title">Human Rhythm</h3>
+                        <p class="card__desc">動きと余白のリズムで、ストレスのない操作感を整えます。</p>
+                    </article>
+                    <article class="card" data-reveal style="--delay: 0.16s;">
+                        <div class="card-icon">
+                            <img src="image/logo-monogramY-512.png" alt="" aria-hidden="true">
+                        </div>
+                        <h3 class="card__title">Prototype Often</h3>
+                        <p class="card__desc">早く作って検証し、最高の着地点まで磨き込みます。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-panel section-panel--skills">
+                    <div class="section-header" data-reveal>
+                        <p class="eyebrow">Skills</p>
+                        <h2 class="section-title">Skills & Strengths</h2>
+                        <p class="section-lead">領域を横断しながら、プロダクトの質を高める技術を磨いています。</p>
+                    </div>
+                    <div class="skills-grid" id="skills-detail"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <p class="eyebrow">Timeline</p>
+                    <h2 class="section-title">これまでの歩み</h2>
+                    <p class="section-lead">学びと挑戦を積み重ねながら、領域を広げています。</p>
+                </div>
+                <div class="timeline" id="timeline"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-panel section-panel--cta">
+                    <div class="section-header" data-reveal>
+                        <p class="eyebrow">Connect</p>
+                        <h2 class="section-title">アイデアを形にする相談を</h2>
+                        <p class="section-lead">プロジェクトの壁打ちや改善提案など、気軽に声をかけてください。</p>
+                    </div>
+                    <div class="section-actions">
+                        <a class="button button--light" href="portfolio.html">Portfolio</a>
+                        <a class="button button--ghost" href="jikatar.html">自語りを読む</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="social-links">
+                <a href="https://github.com" class="social-link" target="_blank" rel="noopener">GH</a>
+                <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener">TW</a>
+                <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">LI</a>
+            </div>
+            <p class="muted">&copy; 2025 Yuzuki Ueno. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="public/js/about.js"></script>
+    <script src="public/js/scroll.js"></script>
+</body>
+</html>

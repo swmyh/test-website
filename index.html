@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上野悠月 | Portfolio</title>
+    <meta name="description" content="理工学・情報学 学生フリーランス">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body class="page-home">
+    <a class="skip-link" href="#main">メインへスキップ</a>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="page-ambient" aria-hidden="true"></div>
+
+    <header id="header" class="site-header">
+        <nav class="site-nav container">
+            <a class="brand" href="index.html#hero">
+                <img src="image/logo-orbit-256.png" alt="" class="brand-mark" width="32" height="32">
+                <span>Yuzuki Ueno</span>
+            </a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="nav-links" aria-expanded="false">Menu</button>
+            <ul id="nav-links" class="nav-links" data-nav>
+                <li><a class="nav-link is-active" href="index.html#hero">Home</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="jikatar.html">自語り</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="hero" class="section hero spotlight" data-spotlight>
+            <div class="container hero-grid">
+                <div class="hero__content flow" data-reveal>
+                    <p class="eyebrow">Creative Technologist</p>
+                    <h1 class="hero__title">
+                        上野 悠月
+                        <span class="title-accent">視認性と操作性を両立する体験設計</span>
+                    </h1>
+                    <p class="hero__lead">
+                        理工学・情報学を軸に、UI/UXから実装まで一気通貫で磨く学生フリーランス。
+                        情報設計と表現の精度を高め、世界観と利便性を両立するプロダクトを目指しています。
+                    </p>
+                    <div class="hero__cta">
+                        <a class="button button--primary" href="portfolio.html">View Projects</a>
+                        <a class="button button--ghost" href="jikatar.html">自語りを読む</a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat-card">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">開発領域</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">プロトタイプ</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">探究と改善</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__media" data-reveal style="--delay: 0.1s;">
+                    <div class="hero__frame parallax" data-parallax data-speed="0.2">
+                        <img src="image/home-hero-1600x900.png" alt="回路図を想起させる抽象ビジュアル">
+                    </div>
+                    <div class="hero__badge parallax" data-parallax data-speed="0.35">
+                        <img src="image/logo-hexCircuit-512.png" alt="" aria-hidden="true">
+                        <span>Systemic Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <p class="eyebrow">Focus</p>
+                    <h2 class="section-title">設計思想をプロダクトに落とし込む</h2>
+                    <p class="section-lead">課題の構造化から体験設計、実装のディテールまで一貫して磨き上げます。</p>
+                </div>
+                <div class="cards-grid">
+                    <article class="card" data-reveal>
+                        <div class="card-icon">
+                            <img src="image/logo-nodeGraph-512.png" alt="" aria-hidden="true">
+                        </div>
+                        <h3 class="card__title">Information Architecture</h3>
+                        <p class="card__desc">情報の流れを整理し、ユーザーが迷わない導線と構造を設計します。</p>
+                        <div class="card__meta">
+                            <span class="badge">視認性</span>
+                            <span class="badge">操作性</span>
+                        </div>
+                    </article>
+                    <article class="card" data-reveal style="--delay: 0.08s;">
+                        <div class="card-icon">
+                            <img src="image/logo-orbit-512.png" alt="" aria-hidden="true">
+                        </div>
+                        <h3 class="card__title">Interface Motion</h3>
+                        <p class="card__desc">流れるようなアニメーションとリズムで、情報の強弱を伝えます。</p>
+                        <div class="card__meta">
+                            <span class="badge">ストーリー性</span>
+                            <span class="badge">没入感</span>
+                        </div>
+                    </article>
+                    <article class="card" data-reveal style="--delay: 0.16s;">
+                        <div class="card-icon">
+                            <img src="image/logo-monogramY-512.png" alt="" aria-hidden="true">
+                        </div>
+                        <h3 class="card__title">Research & Prototype</h3>
+                        <p class="card__desc">検証と改善を重ねて、質感と実用性の最適点を探ります。</p>
+                        <div class="card__meta">
+                            <span class="badge">検証</span>
+                            <span class="badge">改善</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <p class="eyebrow">Journal</p>
+                    <h2 class="section-title">Latest Blog</h2>
+                    <p class="section-lead">技術・開発・学びの記録をデザインと共に届けます。</p>
+                </div>
+                <div class="cards-grid cards-grid--3" id="recent-blog"></div>
+                <div class="section-actions">
+                    <a class="button button--ghost" href="blog.html">全ての記事を見る</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="section">
+            <div class="container">
+                <div class="section-panel section-panel--skills">
+                    <div class="section-header" data-reveal>
+                        <p class="eyebrow">Stack</p>
+                        <h2 class="section-title">Tech Stack</h2>
+                        <p class="section-lead">プロジェクトに合わせて最適な技術を選び、実装力を強化しています。</p>
+                    </div>
+                    <div class="cards-grid" id="tech-stack"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-panel section-panel--cta">
+                    <div class="section-header" data-reveal>
+                        <p class="eyebrow">Next</p>
+                        <h2 class="section-title">新しい体験を一緒に作る</h2>
+                        <p class="section-lead">設計から実装まで、共に最高品質のプロダクトへ。</p>
+                    </div>
+                    <div class="section-actions">
+                        <a class="button button--light" href="about.html">About Me</a>
+                        <a class="button button--ghost" href="portfolio.html">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="social-links">
+                <a href="https://github.com" class="social-link" target="_blank" rel="noopener">GH</a>
+                <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener">TW</a>
+                <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">LI</a>
+            </div>
+            <p class="muted">&copy; 2025 Yuzuki Ueno. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="public/js/main.js"></script>
+    <script src="public/js/scroll.js"></script>
+</body>
+</html>

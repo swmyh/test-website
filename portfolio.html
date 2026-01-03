@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - 上野悠月</title>
+    <meta name="description" content="プロジェクト・制作物の紹介">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/content.css">
+</head>
+<body class="page-portfolio">
+    <a class="skip-link" href="#main">メインへスキップ</a>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="page-ambient" aria-hidden="true"></div>
+
+    <header id="header" class="site-header">
+        <nav class="site-nav container">
+            <a class="brand" href="index.html#hero">
+                <img src="image/logo-orbit-256.png" alt="" class="brand-mark" width="32" height="32">
+                <span>Yuzuki Ueno</span>
+            </a>
+            <button class="nav-toggle" type="button" data-nav-toggle aria-controls="nav-links" aria-expanded="false">Menu</button>
+            <ul id="nav-links" class="nav-links" data-nav>
+                <li><a class="nav-link" href="index.html#hero">Home</a></li>
+                <li><a class="nav-link" href="blog.html">Blog</a></li>
+                <li><a class="nav-link is-active" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="jikatar.html">自語り</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="section hero spotlight" data-spotlight>
+            <div class="container hero-grid">
+                <div class="hero__content flow" data-reveal>
+                    <p class="eyebrow">Projects</p>
+                    <h1 class="hero__title">
+                        Portfolio
+                        <span class="title-accent">プロダクトの設計と実装</span>
+                    </h1>
+                    <p class="hero__lead">
+                        体験価値を高めるために、構造と表現を両立させた制作物をまとめています。
+                    </p>
+                    <div class="hero__cta">
+                        <a class="button button--primary" href="about.html">About Me</a>
+                        <a class="button button--ghost" href="blog.html">Read Blog</a>
+                    </div>
+                </div>
+                <div class="hero__media" data-reveal style="--delay: 0.1s;">
+                    <div class="hero__frame parallax" data-parallax data-speed="0.2">
+                        <img src="image/portfolio-hero-1600x900.png" alt="未来的な回路をイメージしたビジュアル">
+                    </div>
+                    <div class="hero__badge parallax" data-parallax data-speed="0.35">
+                        <img src="image/logo-orbit-512.png" alt="" aria-hidden="true">
+                        <span>Crafted Builds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <p class="eyebrow">Works</p>
+                    <h2 class="section-title">制作物</h2>
+                    <p class="section-lead">プロジェクトの背景や成果を、実装の視点とともに紹介します。</p>
+                </div>
+                <div class="section-toolbar" data-reveal>
+                    <p class="muted">表示切替</p>
+                    <div class="view-toggle" data-view-toggle="portfolio">
+                        <button type="button" class="view-btn active" data-view="grid">サムネイル</button>
+                        <button type="button" class="view-btn" data-view="list">リスト</button>
+                    </div>
+                </div>
+                <div id="portfolio-list" class="posts-container is-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="social-links">
+                <a href="https://github.com" class="social-link" target="_blank" rel="noopener">GH</a>
+                <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener">TW</a>
+                <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener">LI</a>
+            </div>
+            <p class="muted">&copy; 2025 Yuzuki Ueno. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="content-modal" class="content-modal" aria-hidden="true">
+        <div class="content-modal__panel" role="dialog" aria-modal="true" aria-labelledby="content-modal-title">
+            <button type="button" class="content-modal__close" data-modal-close aria-label="閉じる">×</button>
+            <img id="content-modal-image" class="content-modal__image" alt="">
+            <div id="content-modal-meta" class="content-modal__meta"></div>
+            <h2 id="content-modal-title" class="content-modal__title"></h2>
+            <div id="content-modal-body" class="content-modal__body"></div>
+            <div id="content-modal-actions" class="content-modal__actions"></div>
+        </div>
+    </div>
+
+    <script type="module" src="public/js/portfolio.js"></script>
+    <script src="public/js/scroll.js"></script>
+</body>
+</html>
