@@ -20,6 +20,7 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -187,10 +188,10 @@
 
     <main>
         <div class="container">
-            <div class="hero">
+            <div class="hero" id="home">
                 <h2>Welcome to Our Website</h2>
                 <p>A modern, responsive website built with clean HTML and CSS. Experience smooth interactions and beautiful design.</p>
-                <a href="#" class="cta-button">Get Started</a>
+                <a href="#about" class="cta-button">Get Started</a>
 
                 <div class="features">
                     <div class="feature">
@@ -209,6 +210,20 @@
             </div>
         </div>
     </main>
+
+    <section id="about" style="background-color: rgba(255, 255, 255, 0.95); padding: 3rem 0; margin: 2rem 0; border-radius: 12px;">
+        <div class="container">
+            <h2 style="text-align: center; color: #2d3748; margin-bottom: 1rem;">About Us</h2>
+            <p style="text-align: center; color: #4a5568; max-width: 800px; margin: 0 auto;">We create beautiful, modern websites that help businesses succeed online. Our focus is on clean design, fast performance, and excellent user experience.</p>
+        </div>
+    </section>
+
+    <section id="contact" style="background-color: rgba(255, 255, 255, 0.95); padding: 3rem 0; margin: 2rem 0; border-radius: 12px;">
+        <div class="container">
+            <h2 style="text-align: center; color: #2d3748; margin-bottom: 1rem;">Contact</h2>
+            <p style="text-align: center; color: #4a5568;">Get in touch with us for your next project.</p>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
