@@ -64,7 +64,7 @@ function insertImage(textarea) {
   const start = textarea.selectionStart
   const end = textarea.selectionEnd
   const altPlaceholder = '画像の説明'
-  const urlPlaceholder = 'image/your-image.png'
+  const urlPlaceholder = 'solid-slate-512x512.png'
   const insertText = `![${altPlaceholder}](${urlPlaceholder})`
   textarea.value = value.slice(0, start) + insertText + value.slice(end)
   const urlStart = start + altPlaceholder.length + 4

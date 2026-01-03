@@ -7,10 +7,10 @@ marked.setOptions({
 })
 
 const previewImages = [
-  'image/blog-bg-1280x720.png',
-  'image/grad-linear_teal-1920x1080.png',
-  'image/grad-linear_cyan-1920x1080.png',
-  'image/grad-linear_violet-1920x1080.png'
+  'blog-bg-1280x720.png',
+  'grad-linear_teal-1920x1080.png',
+  'grad-linear_cyan-1920x1080.png',
+  'grad-linear_violet-1920x1080.png'
 ]
 
 const container = document.getElementById('blog-list')
